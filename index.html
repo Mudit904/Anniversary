@@ -519,6 +519,37 @@
             overflow: hidden;
         }
 
+        .hero-image-bg {
+            position: absolute;
+            top: 50%;
+            left: 50%;
+            transform: translate(-50%, -50%);
+            width: 100%;
+            max-width: 800px;
+            /* Adjust based on your photo size */
+            height: auto;
+            opacity: 0.6;
+            /* Makes it "pop" softly behind the text */
+            z-index: 0;
+            mask-image: radial-gradient(circle, black 40%, transparent 80%);
+            -webkit-mask-image: radial-gradient(circle, black 40%, transparent 80%);
+        }
+
+        .hero-content-wrapper {
+            position: relative;
+            z-index: 1;
+            /* Ensures text stays in front of the image */
+            text-shadow: 0px 2px 15px rgba(0, 0, 0, 0.2);
+        }
+
+        /* Update title color to match the white in your reference */
+        .hero-title {
+            color: #ffffff;
+            font-size: clamp(2.8rem, 8vw, 5.5rem);
+            margin-bottom: 10px;
+            line-height: 1.1;
+        }
+
         #hero::before {
             content: '';
             position: absolute;
@@ -1356,6 +1387,7 @@
 
     <canvas id="particle-canvas"></canvas>
 
+   
     <section id="hero">
         <h1 class="hero-title reveal heartbeat sparkle-title"><span class="sparkle-after"></span>Celebrating 21
             Years<br>of Endless Love</h1>
@@ -1546,6 +1578,10 @@
                 "WhatsApp Image 2026-03-11 at 12.36.56 PM.jpeg",
                 "WhatsApp Image 2026-03-14 at 8.31.31 AM.jpeg",
                 "WhatsApp Image 2026-03-19 at 1.55.19 PM.jpeg",
+                "WhatsApp Image 2026-04-13 at 10.58.23 AM.jpeg",
+                "WhatsApp Image 2026-04-13 at 11.00.41 AM.jpeg",
+                "WhatsApp Image 2026-04-13 at 11.01.21 AM.jpeg",
+                "WhatsApp Image 2026-04-13 at 11.03.57 AM.jpeg",
             ],
 
             trivia: {
